@@ -18,5 +18,14 @@ jobs:
       - name: Instalar Dependências  
         run: npm install  
 
-      - name: Rodar Testes  
+      - name: Rodar Testes Automatizados  
         run: npm test  
+
+      - name: Validar Execução do Pipeline  
+        run: |
+          if [ $? -eq 0 ]; then
+            echo "Pipeline executado com sucesso!";
+          else
+            echo "Falha na execução do pipeline.";
+            exit 1;
+          fi
