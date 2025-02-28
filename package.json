@@ -1,0 +1,12 @@
+{
+  "name": "ci-cd",
+  "version": "1.0.0",
+  "description": "CI-CD é um processo automatizado que permite aos desenvolvedores integrar, testar e implantar seu código de forma rápida e eficiente.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
